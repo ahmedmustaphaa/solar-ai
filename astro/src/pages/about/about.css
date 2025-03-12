@@ -1,0 +1,163 @@
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #0f2027;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-container {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ahmedkozman{
+  color: red;
+}
+.icon {
+  margin-right:0px 8px; 
+  color: #00aeef;
+}
+
+.about-image {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #00c6ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #ddeeff;
+  margin-bottom: 30px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.stat-icon h2{
+  color:red;
+  font-size: 120px;
+}
+.info-box {
+  border-radius: 8px;
+  padding: 20px;
+
+}
+
+.info-box h3 {
+  color: #00c6ff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.info-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-box li {
+  margin: 5px 0;
+  color: #ddeeff;
+}
+
+@media (max-width: 920px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .stat-box {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .about-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .stats-container {
+    margin-top: 20px;
+  }
+
+  .stat-box {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .info-box h3 {
+    font-size: 20px;
+  }
+}
+.stat-box p {
+  font-size: 1rem;
+  color: #ddeeff; /* Slightly lighter for contrast */
+  margin-top: 5px;
+}

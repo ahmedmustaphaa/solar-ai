@@ -1,0 +1,75 @@
+.solar-guide {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+}
+
+.toptitle {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00c6ff;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  
+  text-align: center;
+}
+
+.faq-container {
+  text-align: left;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  font-size: 14px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .solar-guide{
+    width: 80%;
+  }
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+  }
+}

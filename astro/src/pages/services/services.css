@@ -1,0 +1,138 @@
+.services-section {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00c6ff;
+  margin-bottom: 20px;
+}
+
+.services-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.services-text {
+  width: 30%;
+}
+
+.service-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.service-item h3 {
+  color: #00c6ff;
+}
+
+.service-item p {
+  color: #ddd;
+}
+
+.service-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.service-link {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+.services-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-button {
+  background: #00c6ff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 20px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background: #0086b3;
+}
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 28px;
+  }
+
+  .services-description {
+    font-size: 16px;
+  }
+
+  .services-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .services-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .contact-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 24px;
+  }
+
+  .services-description {
+    font-size: 14px;
+  }
+
+  .contact-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .services-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
