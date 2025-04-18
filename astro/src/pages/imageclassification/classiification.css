@@ -1,0 +1,154 @@
+.classification-page {
+    background-color: #2B5161;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.8rem;
+    margin: 1.5rem auto;
+    max-width: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-label {
+    cursor: pointer;
+}
+
+.file-input {
+    display: none; /* Hidden file input */
+}
+
+.loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.img-preview {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tips-section {
+    margin-top: 1rem;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.star {
+    background: none;
+    border: none;
+    color: #ffd700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.star.filled {
+    color: #ffa500;
+}
+
+.download-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+.loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    border-top: 8px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .download-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .spinner {
+        width: 40px;
+        height: 40px;
+    }
+
+    .star {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    .download-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .spinner {
+        width: 30px;
+        height: 30px;
+    }
+
+    .feedback {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

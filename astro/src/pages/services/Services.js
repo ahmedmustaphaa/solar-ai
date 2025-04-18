@@ -30,6 +30,7 @@ export default function Services() {
     { title: "fault detection", link: "/fault-detection" },
     { title: "energy predection", link: "/energy-predection" },
     { title: "data analysis dashpoard", link: "/data-analysis-dashpoard" },
+    { title: "image classification", link: "/classification" },
     { title: "predictive mentance", link: "/predictive-mentance" },
     
   ];
@@ -57,7 +58,7 @@ export default function Services() {
         <div className="services-content">
        
           <div className="services-text">
-            {services.slice(0, 2).map((service, index) => (
+            {services.slice(0, 3).map((service, index) => (
               <motion.div 
                 key={index} 
                 className="service-item"
@@ -87,7 +88,7 @@ export default function Services() {
 
         
           <div className="services-text">
-            {services.slice(2, 4).map((service, index) => (
+            {services.slice(3, 5).map((service, index) => (
               <motion.div 
                 key={index} 
                 className="service-item"
@@ -120,5 +121,4 @@ whileHover={{ scale: 1.05 }}
     </section>
   );
 }
-
 

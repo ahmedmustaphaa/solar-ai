@@ -17,6 +17,7 @@ import Footer from './pages/foooter/Footer';
 import EnergyPrediction from './pages/energypreiction/EnergyPrediction';
 import Dashboard from './pages/dataanalysisdashpoard/DataAnalysisDashpoard';
 import PredictiveMaintenance from './pages/predictive/Predictivemantance';
+import ImageClassificationPage from './pages/imageclassification/Imageclassification';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
     <Route path='/contact' element={<div><Navbar/> <ContactUs/> <Footer/></div>}></Route>
     <Route path='/energy-predection' element={<div><Navbar/> <EnergyPrediction/> <Footer/></div>}></Route>
     <Route path='/data-analysis-dashpoard' element={<div><Navbar/> <Dashboard/> <Footer/></div>}></Route>
+    <Route path='/classification' element={<div><Navbar/> <ImageClassificationPage/> <Footer/></div>}></Route>
     <Route path='/predictive-mentance' element={<div><Navbar/> <PredictiveMaintenance/> <Footer/></div>}></Route>
     <Route path="/services" element={
    <div>
